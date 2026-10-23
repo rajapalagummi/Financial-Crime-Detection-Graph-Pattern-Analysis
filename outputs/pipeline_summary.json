@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-06T05:19:21.800080",
+  "generated_at": "2026-10-23T05:12:02.991163",
   "dataset": "IBM AML Synthetic Dataset \u2014 HI-Small",
   "total_transactions": 5078345,
   "laundering_transactions": 5177,
@@ -16,7 +16,7 @@
       "fn": 908
     },
     "GBT": {
-      "auc": 0.9801,
+      "auc": 0.98,
       "f1": 0.999,
       "accuracy": 0.9992,
       "precision": 0.902,

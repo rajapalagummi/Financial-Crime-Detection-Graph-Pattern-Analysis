@@ -49,11 +49,11 @@ The pipeline runs in four stages.
 
 ## Key Results
 
-Run `python3 main.py` on the HI-Small dataset to generate actual results. Typical results on this dataset:
+Measured results from `python3 main.py --skip-graph` on HI-Small (5,078,345 transactions):
 
-- Class imbalance: laundering transactions represent approximately 2-5% of total volume
-- Graph: thousands of accounts, hundreds of flagged structural patterns
-- ML: AUC in the 0.85-0.95 range depending on feature quality
+- Class imbalance: 5,177 laundering transactions (0.10%)
+- Graph: fan-out, fan-in and cycle detectors covered by unit tests in `tests/test_aml.py`
+- ML: GBT AUC 0.98, precision 90.2%, recall 27.1%; Random Forest AUC 0.95, precision 97.4%, recall 10.8%
 
 The full results with exact numbers are saved to `outputs/pipeline_summary.json` after each run.
 
